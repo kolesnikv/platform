@@ -126,7 +126,7 @@ export default class ServiceSettings extends React.Component {
                                 defaultValue={this.props.config.ServiceSettings.MaximumLoginAttempts}
                                 onChange={this.handleChange}
                             />
-                            <p className='help-text'>{'Login attempts allowed before user is locked out and required to reset password via email.'}</p>
+                            <p className='help-text'>{'Consecutive failed login attempts allowed before user is locked out and required to reset password via email.'}</p>
                         </div>
                     </div>
 
