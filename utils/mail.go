@@ -104,7 +104,7 @@ func SendMailUsingConfig(to, subject, body string, config *model.Config) *model.
 	headers["To"] = toMail.String()
 	headers["Subject"] = html.UnescapeString(subject)
 	headers["MIME-version"] = "1.0"
-	headers["Content-Type"] = "text/html"
+	headers["Content-Type"] = "text/html; charset=utf-8"
 	headers["Date"] = time.Now().Format(time.RFC1123Z)
 
 	message := ""
